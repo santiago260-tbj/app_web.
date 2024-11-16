@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billetera Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Billetera Digital</h1>
+    <div id="wallet">
+        <h2>Saldo: <span id="balance">0</span></h2>
+        <div>
+            <label for="idNumber">Número de Cédula:</label>
+            <input type="text" id="idNumber" required>
+        </div>
+        <div>
+            <label for="phoneNumber">Número de Celular:</label>
+            <input type="tel" id="phoneNumber" required>
+        </div>
+        <div>
+            <label for="amount">Monto:</label>
+            <input type="number" id="amount" required>
+        </div>
+        <button onclick="deposit()">Consignar</button>
+        <button onclick="withdraw()">Retirar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
